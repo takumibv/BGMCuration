@@ -22,6 +22,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.android.youtube.player.YouTubePlayerFragment;
+
 /**
  * Fragment used for managing interactions for and presentation of a navigation drawer.
  * See the <a href="https://developer.android.com/design/patterns/navigation-drawer.html#Interaction">
@@ -78,6 +80,13 @@ public class NavigationDrawerFragment extends Fragment {
         // Select either the default item (0) or the last selected item.
         selectItem(mCurrentSelectedPosition);
     }
+
+//    public void onClick(View view){
+//        YouTubePlayerFragment youTubePlayerFragment;
+//        youTubePlayerFragment =
+//                (YouTubePlayerFragment) getFragmentManager().findFragmentById(R.id.youtube_fragment);
+//        youTubePlayerFragment.initialize("AIzaSyC8KDW0UhRrWPT4gLet5rW9W5KZV3QZ60M", MainActivity.this);
+//    }
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -247,10 +256,10 @@ public class NavigationDrawerFragment extends Fragment {
             return true;
         }
 
-        if (item.getItemId() == R.id.action_example) {
-            Toast.makeText(getActivity(), "Example action.", Toast.LENGTH_SHORT).show();
-            return true;
-        }
+//        if (item.getItemId() == R.id.action_example) {
+//            Toast.makeText(getActivity(), "Example action.", Toast.LENGTH_SHORT).show();
+//            return true;
+//        }
 
         return super.onOptionsItemSelected(item);
     }

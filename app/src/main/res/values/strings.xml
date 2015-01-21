@@ -10,4 +10,11 @@
     <string name="action_example">Example action</string>
     <string name="action_settings">Settings</string>
 
+    <string-array name="playlist_array">
+        <item>play1</item>
+        <item>play2</item>
+        <item>play3</item>
+        <item>play4</item>
+    </string-array>
+
 </resources>
